@@ -12,9 +12,9 @@
 
 ### Стек реализации
 
-!(https://img.shields.io/badge/clear-HTML-%23d84924)
-!(https://img.shields.io/badge/clear-CSS-%231f5ea6)
-!(https://img.shields.io/badge/native-JS-%23ead41c)
+![HTML](https://img.shields.io/badge/clear-HTML-%23d84924)
+![CSS](https://img.shields.io/badge/clear-CSS-%231f5ea6)
+![JS](https://img.shields.io/badge/native-JS-%23ead41c)
 
 ### Демо
 
