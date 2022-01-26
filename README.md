@@ -12,4 +12,18 @@
 
 ### Стек реализации
 
-https://img.shields.io/badge/clear-HTML-%23d84924
+!(https://img.shields.io/badge/clear-HTML-%23d84924)
+!(https://img.shields.io/badge/clear-CSS-%231f5ea6)
+!(https://img.shields.io/badge/native-JS-%23ead41c)
+
+### Демо
+
+```
+Здесь будет ссылка на gh-pages
+```
+
+### Инсталяция
+
+```
+Просто нажмите на index.html 2 раза или откройте VS Code и воспользуйтесь плагином Live Server
+```
