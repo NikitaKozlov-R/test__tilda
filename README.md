@@ -16,6 +16,12 @@
 ![CSS](https://img.shields.io/badge/clear-CSS-%231f5ea6)
 ![JS](https://img.shields.io/badge/native-JS-%23ead41c)
 
+### Макет
+
+```
+https://www.figma.com/file/6gs5g0Eeeqed7uDqjlm7Cf/test__Tilda-Publishing?node-id=5%3A136
+```
+
 ### Демо
 
 ```
