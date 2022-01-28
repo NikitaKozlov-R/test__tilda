@@ -1,0 +1,22 @@
+:root {
+  /* colors */
+  --color-primary: #05080d;
+  --color-secondary: #66666e;
+  --color-white: #fdfffc;
+  --color-warning: #f21b3f;
+  --color-backgraud: #161b22;
+
+  /* animation */
+  --transition-base: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --scale-base: scale(1.2);
+
+  /* shadows */
+  --shadow-base: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --shadow-hover: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+* {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Ubuntu', sans-serif;
+}
