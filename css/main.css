@@ -4,7 +4,7 @@
   --color-secondary: #66666e;
   --color-white: #fdfffc;
   --color-warning: #f21b3f;
-  --color-backgraud: #161b22;
+  --color-background: #161b22;
 
   /* animation */
   --transition-base: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
