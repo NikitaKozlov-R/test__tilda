@@ -18,9 +18,9 @@
 
 ### Макет
 
-```
-https://www.figma.com/file/6gs5g0Eeeqed7uDqjlm7Cf/test__Tilda-Publishing?node-id=5%3A136
-```
+![Версии дизайна](https://raw.githubusercontent.com/NikitaKozlov-R/test__tilda/master/design/desktop-default-state.jpg)
+
+> https://www.figma.com/file/6gs5g0Eeeqed7uDqjlm7Cf/test__Tilda-Publishing?node-id=5%3A136
 
 ### Демо
 
