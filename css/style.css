@@ -15,3 +15,9 @@
   padding: 24px 32px;
   background-color: var(--color-white);
 }
+
+.c-slider__button {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
