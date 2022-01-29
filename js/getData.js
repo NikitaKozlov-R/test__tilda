@@ -10,7 +10,7 @@ fetch(url)
     }
 
     response.json().then(function (data) {
-      dataHandler(data)
+      render(data)
     })
   })
   .catch(function (error) {
