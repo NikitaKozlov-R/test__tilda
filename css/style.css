@@ -16,8 +16,26 @@
   background-color: var(--color-white);
 }
 
+.c-slider {
+  position: relative;
+}
+.c-slider__frame {
+  height: 206px;
+  max-height: 206px;
+  display: flex;
+  overflow: hidden;
+}
+
+.c-slider__button-box {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 .c-slider__button {
   width: 24px;
   height: 24px;
   fill: currentColor;
+  cursor: pointer;
 }
