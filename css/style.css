@@ -11,10 +11,15 @@
 .card {
   width: 352px;
   height: 552px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border-radius: 4px;
   padding: 24px 32px;
   background-color: var(--color-white);
 }
+
+/* slider styles */
 
 .c-slider {
   position: relative;
@@ -25,7 +30,9 @@
   display: flex;
   overflow: hidden;
 }
-
+.c-slider__image {
+  border-radius: 8px;
+}
 .c-slider__button-box {
   position: absolute;
   top: 45%;
@@ -38,4 +45,56 @@
   height: 24px;
   fill: currentColor;
   cursor: pointer;
+}
+
+/* price styles */
+
+.c-price {
+  position: relative;
+  z-index: 2;
+  width: min-content;
+  padding-right: 16px;
+  margin-top: -12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-primary);
+  box-shadow: var(--shadow-base);
+  border-radius: 24px;
+}
+.c-price__button {
+  width: 40px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 4px;
+  padding-right: 7px;
+  fill: currentColor;
+  cursor: pointer;
+  color: var(--color-primary);
+  border-right: 1px solid var(--color-primary);
+}
+.c-price__icon {
+  width: 16px;
+  height: 16px;
+}
+
+.c-price__values {
+  min-width: 64px;
+  padding-left: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--color-primary);
+}
+.c-price__old {
+  font-size: 0.5rem;
+  margin-right: 4px;
+  text-decoration-line: line-through;
+}
+.c-price__current {
+  font-size: 1rem;
+  font-weight: 500;
 }
