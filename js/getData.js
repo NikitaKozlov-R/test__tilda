@@ -10,7 +10,7 @@ fetch(url)
     }
 
     response.json().then(function (data) {
-      render(data)
+      renderData(data)
     })
   })
   .catch(function (error) {
