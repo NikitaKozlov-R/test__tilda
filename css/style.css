@@ -98,3 +98,29 @@
   font-size: 1rem;
   font-weight: 500;
 }
+
+/* heading styles */
+
+.c-heading {
+  width: 100%;
+  margin-top: 16px;
+}
+.c-heading__quantity {
+  min-height: 19px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-warning);
+}
+.c-heading__title {
+  margin-top: 4px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+.c-heading__description {
+  width: 100%;
+  margin-top: 16px;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-secondary);
+}
