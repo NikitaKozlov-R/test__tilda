@@ -5,7 +5,7 @@ function renderData(data) {
 
   let imagesContainer = document.querySelector('.c-slider__frame')
 
-  imagesArray.reverse().forEach(item => {
+  imagesArray.forEach(item => {
     imagesContainer.innerHTML += `
       <img
         class="c-slider__image"
@@ -15,9 +15,9 @@ function renderData(data) {
     `
   })
 
-  // PRICES
-  let priceOld = JSON.parse(data.priceold)
-  let priceCurrent = JSON.parse(data.price) + '₽'
+  // CART BUTTON & PRICE
+  let priceOld = data.priceold
+  let priceCurrent = data.price + '₽'
 
   let priceOldContainer = document.querySelector('.c-price__old')
   let priceCurrentContainer = document.querySelector('.c-price__current')
@@ -25,8 +25,29 @@ function renderData(data) {
   dataInner(priceOldContainer, priceOld)
   dataInner(priceCurrentContainer, priceCurrent)
 
-  //FUNCTIONS
-  function dataInner(container, value) {
-    container.innerHTML = value
+  // PRODUCT HEADING & DESCRIPTION
+  let quantity = data.quantity
+  let title = data.title
+  let description = data.descr
+
+  let quantityContainer = document.querySelector('.c-heading__quantity')
+  let titleContainer = document.querySelector('.c-heading__title')
+  let descriptionContainer = document.querySelector('.c-heading__description')
+
+  if (quantity < 10 && quantity !== 0) {
+    quantity = 'Only ' + quantity + ' left!'
+    dataInner(quantityContainer, quantity)
   }
+  if (quantity === 0) {
+    quantity = 'The product is over!'
+    dataInner(quantityContainer, quantity)
+  }
+
+  dataInner(titleContainer, title)
+  dataInner(descriptionContainer, description)
+}
+
+// FUNCTIONS
+function dataInner(container, value) {
+  container.innerHTML = value
 }
