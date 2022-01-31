@@ -122,5 +122,6 @@
   margin-top: 16px;
   font-size: 1rem;
   font-weight: 300;
+  line-height: 120%;
   color: var(--color-secondary);
 }
