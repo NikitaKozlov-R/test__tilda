@@ -47,7 +47,6 @@ function renderData(data) {
   dataInner(descriptionContainer, description)
 }
 
-// FUNCTIONS
 function dataInner(container, value) {
   container.innerHTML = value
 }
