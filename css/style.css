@@ -38,6 +38,10 @@
 }
 .c-slider__image {
   border-radius: 8px;
+  display: none;
+}
+.c-slider__image.active {
+  display: block;
 }
 .c-slider__button-box {
   position: absolute;
