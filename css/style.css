@@ -55,6 +55,13 @@
   height: 24px;
   fill: currentColor;
   cursor: pointer;
+  color: var(--color-secondary);
+  transition: var(--transition-base);
+}
+.c-slider__button:hover,
+.c-slider__button:focus {
+  color: var(--color-primary);
+  transform: var(--scale-base);
 }
 
 /* price styles */
