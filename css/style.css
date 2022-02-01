@@ -65,7 +65,7 @@
   z-index: 2;
   overflow: hidden;
   width: min-content;
-  padding-right: 16px;
+  padding-right: var(--padding-lg);
   margin-top: -18px;
   border-radius: var(--border-radius-lg);
   display: flex;
@@ -100,7 +100,7 @@
 }
 .c-price__values {
   min-width: 128px;
-  padding-left: 16px;
+  padding-left: var(--padding-lg);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -108,7 +108,7 @@
 }
 .c-price__old {
   font-size: var(--font-size-md);
-  margin-right: 8px;
+  margin-right: var(--margin-md);
   text-decoration-line: line-through;
 }
 .c-price__current {
@@ -118,16 +118,16 @@
 
 .c-heading {
   width: var(--width-max);
-  margin-top: var(--margin-lg);
+  margin-top: var(--margin-x-lg);
 }
 .c-heading__quantity {
   min-height: 19px;
   font-size: var(--font-size-md);
   font-weight: 500;
-  color: var(--color-warning);
+  color: var(--color-strong-red);
 }
 .c-heading__title {
-  margin-top: 4px;
+  margin-top: var(--margin-sm);
   font-size: var(--font-size-lg);
   font-weight: 500;
   color: var(--color-primary);
@@ -165,7 +165,7 @@
   color: var(--color-primary);
 }
 .c-actions__btn.like.active {
-  color: var(--color-warning);
+  color: var(--color-strong-red);
 }
 .c-actions__btn.share.active {
   color: var(--color-navy-blue);

@@ -11,9 +11,13 @@
   --height-max-view: 100vh;
 
   --padding-md: 8px;
+  --padding-lg: 16px;
   --padding-container: 24px 32px;
 
+  --margin-sm: 4px;
+  --margin-md: 8px;
   --margin-lg: 16px;
+  --margin-x-lg: 24px;
 
   --font-size-md: 1rem;
   --font-size-lg: 1.5rem;
@@ -21,14 +25,14 @@
   --color-primary: #05080d;
   --color-secondary: #66666e;
   --color-white: #fdfffc;
-  --color-warning: #f21b3f;
+  --color-strong-red: #f21b3f;
   --color-background: #161b22;
   --color-navy-blue: #2d7dd2;
   --color-orange-yellow: #eeb902;
 
   --border-radius-sm: 4px;
   --border-radius-md: 8px;
-  --border-radius-lg: 16px;
+  --border-radius-lg: 24px;
 
   --border-base: 2px solid var(--color-primary);
 
