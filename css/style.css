@@ -58,6 +58,7 @@
 .c-price {
   position: relative;
   z-index: 2;
+  overflow: hidden;
   width: min-content;
   padding-right: 16px;
   margin-top: -18px;
@@ -68,10 +69,6 @@
   background-color: var(--color-white);
   border: 2px solid var(--color-primary);
   box-shadow: var(--shadow-base);
-  transition: var(--transition-base);
-}
-.c-price:hover {
-  box-shadow: var(--shadow-hover);
 }
 .c-price__button {
   width: 56px;
@@ -85,6 +82,12 @@
   cursor: pointer;
   color: var(--color-primary);
   border-right: 2px solid var(--color-primary);
+  transition: var(--transition-slow);
+}
+.c-price__button:hover,
+.c-price__button:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--color-primary);
+  color: var(--color-white);
 }
 .c-price__icon {
   width: 24px;
