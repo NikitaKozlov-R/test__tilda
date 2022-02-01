@@ -1,0 +1,27 @@
+{
+  "name": "test__tilda",
+  "version": "1.0.0",
+  "description": "Test task for the vacancy \"Front-developer\" in the company \"Tilda Publishing\"",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NikitaKozlov-R/test__tilda.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "Native",
+    "JS",
+    "fetch",
+    "slider"
+  ],
+  "author": "Nikita Kozlov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NikitaKozlov-R/test__tilda/issues"
+  },
+  "homepage": "https://github.com/NikitaKozlov-R/test__tilda#readme"
+}
