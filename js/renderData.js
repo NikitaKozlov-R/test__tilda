@@ -1,38 +1,22 @@
 function renderData(data) {
-  console.log(data)
-  // IMAGES
-  let imagesArray = JSON.parse(data.images)
-
-  let imagesContainer = document.querySelector('.c-slider__frame')
-
-  imagesArray.forEach(item => {
-    imagesContainer.innerHTML += `
-      <img
-        class="c-slider__image"
-        src="${item.img}"
-        alt="Наушники"
-      >
-    `
-  })
-
   // CART BUTTON & PRICE
-  let priceOld = data.priceold
-  let priceCurrent = data.price + '₽'
+  const priceOld = data.priceold
+  const priceCurrent = data.price + '₽'
 
-  let priceOldContainer = document.querySelector('.c-price__old')
-  let priceCurrentContainer = document.querySelector('.c-price__current')
+  const priceOldContainer = document.querySelector('.c-price__old')
+  const priceCurrentContainer = document.querySelector('.c-price__current')
 
   dataInner(priceOldContainer, priceOld)
   dataInner(priceCurrentContainer, priceCurrent)
 
   // PRODUCT HEADING & DESCRIPTION
   let quantity = data.quantity
-  let title = data.title
-  let description = data.descr
+  const title = data.title
+  const description = data.descr
 
-  let quantityContainer = document.querySelector('.c-heading__quantity')
-  let titleContainer = document.querySelector('.c-heading__title')
-  let descriptionContainer = document.querySelector('.c-heading__description')
+  const quantityContainer = document.querySelector('.c-heading__quantity')
+  const titleContainer = document.querySelector('.c-heading__title')
+  const descriptionContainer = document.querySelector('.c-heading__description')
 
   if (quantity < 10 && quantity !== 0) {
     quantity = 'Only ' + quantity + ' left!'
@@ -45,6 +29,21 @@ function renderData(data) {
 
   dataInner(titleContainer, title)
   dataInner(descriptionContainer, description)
+
+  // IMAGES
+  const imagesArray = JSON.parse(data.images)
+
+  const imagesContainer = document.querySelector('.c-slider__frame')
+
+  imagesArray.reverse().forEach(item => {
+    imagesContainer.innerHTML += `
+        <img
+          class="c-slider__image active"
+          src="${item.img}"
+          alt="Наушники"
+        >
+      `
+  })
 }
 
 function dataInner(container, value) {
