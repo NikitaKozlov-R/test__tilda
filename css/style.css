@@ -14,9 +14,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   border-radius: 4px;
   padding: 24px 32px;
   background-color: var(--color-white);
+}
+.c-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* slider styles */
@@ -124,4 +130,39 @@
   font-weight: 300;
   line-height: 120%;
   color: var(--color-secondary);
+}
+
+/* ACTIONS STYLES */
+
+.c-actions {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.c-actions__main {
+  display: flex;
+  gap: 8px;
+}
+.c-actions__btn {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  cursor: pointer;
+  color: var(--color-secondary);
+  transition: var(--transition-base);
+}
+.c-actions__btn:hover,
+.c-actions__btn:focus {
+  transform: var(--scale-base);
+  color: var(--color-primary);
+}
+.c-actions__btn.like.active {
+  color: var(--color-warning);
+}
+.c-actions__btn.share.active {
+  color: var(--color-navy-blue);
+}
+.c-actions__btn.compare.active {
+  color: var(--color-orange-yellow);
 }
