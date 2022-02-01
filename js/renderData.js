@@ -47,8 +47,6 @@ function quantityHandler(quantity) {
   // If the server return the quantity as a string
   Number(quantity)
 
-  console.log(quantity)
-
   if (quantity < 10 && quantity !== 0) {
     return (quantity = 'Only ' + quantity + ' left!')
   }
@@ -56,7 +54,7 @@ function quantityHandler(quantity) {
     return (quantity = 'The product is over!')
   }
 
-  return ''
+  return false
 }
 
 function dataInner(container, value) {
