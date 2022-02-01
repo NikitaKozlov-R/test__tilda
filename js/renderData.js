@@ -9,18 +9,9 @@ function renderHeading(quantity, title, description) {
   const titleContainer = document.querySelector('.c-heading__title')
   const descriptionContainer = document.querySelector('.c-heading__description')
 
-  // If the server return the quantity as a string
-  Number(quantity)
+  quantity = quantityHandler(quantity)
 
-  if (quantity < 10 && quantity) {
-    quantity = 'Only ' + quantity + ' left!'
-    dataInner(quantityContainer, quantity)
-  }
-  if (!quantity) {
-    quantity = 'The product is over!'
-    dataInner(quantityContainer, quantity)
-  }
-
+  dataInner(quantityContainer, quantity)
   dataInner(titleContainer, title)
   dataInner(descriptionContainer, description)
 }
@@ -52,6 +43,25 @@ function renderImages(images, title) {
   })
 }
 
+function quantityHandler(quantity) {
+  // If the server return the quantity as a string
+  Number(quantity)
+
+  console.log(quantity)
+
+  if (quantity < 10 && quantity !== 0) {
+    return (quantity = 'Only ' + quantity + ' left!')
+  }
+  if (quantity === 0) {
+    return (quantity = 'The product is over!')
+  }
+
+  return ''
+}
+
 function dataInner(container, value) {
+  if (!value) {
+    return
+  }
   container.innerHTML = value
 }
