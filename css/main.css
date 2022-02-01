@@ -10,6 +10,7 @@
 
   /* animation */
   --transition-base: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --transition-slow: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
   --scale-base: scale(1.2);
 
   /* shadows */
