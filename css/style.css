@@ -55,7 +55,7 @@
   transition: var(--transition-base);
 }
 .c-slider__button:hover,
-.c-slider__button:focus {
+.c-slider__button:focus-visible {
   color: var(--color-primary);
   transform: var(--scale-base);
 }
@@ -90,7 +90,7 @@
   transition: var(--transition-slow);
 }
 .c-price__button:hover,
-.c-price__button:focus {
+.c-price__button:focus-visible {
   box-shadow: inset 6.5em 0 0 0 var(--color-primary);
   color: var(--color-white);
 }
@@ -160,7 +160,7 @@
   transition: var(--transition-base);
 }
 .c-actions__btn:hover,
-.c-actions__btn:focus {
+.c-actions__btn:focus-visible {
   transform: var(--scale-base);
   color: var(--color-primary);
 }
