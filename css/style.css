@@ -1,20 +1,20 @@
 .wrapper {
-  width: 100%;
-  height: 100vh;
+  width: var(--width-max);
+  height: var(--height-max-view);
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--color-background);
 }
 .card {
-  width: 352px;
-  height: 552px;
+  width: var(--width-container);
+  height: var(--height-container);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border-radius: 4px;
-  padding: 24px 32px;
+  border-radius: var(--border-radius-sm);
+  padding: var(--padding-container);
   background-color: var(--color-white);
 }
 .c-inner {
@@ -27,13 +27,13 @@
   position: relative;
 }
 .c-slider__frame {
-  height: 206px;
-  max-height: 206px;
+  height: var(--height-image);
+  max-height: var(--height-image);
   display: flex;
   overflow: hidden;
 }
 .c-slider__image {
-  border-radius: 8px;
+  border-radius: var(--border-radius-md);
   display: none;
 }
 .c-slider__image.active {
@@ -41,14 +41,14 @@
 }
 .c-slider__button-box {
   position: absolute;
-  top: 45%;
-  width: 100%;
+  top: var(--pos-absolut-center);
+  width: var(--width-max);
   display: flex;
   justify-content: space-between;
 }
 .c-slider__button {
-  width: 24px;
-  height: 24px;
+  width: var(--width-md);
+  height: var(--width-md);
   fill: currentColor;
   cursor: pointer;
   color: var(--color-secondary);
@@ -67,12 +67,12 @@
   width: min-content;
   padding-right: 16px;
   margin-top: -18px;
-  border-radius: 24px;
+  border-radius: var(--border-radius-lg);
   display: flex;
   align-items: center;
   justify-content: flex-start;
   background-color: var(--color-white);
-  border: 2px solid var(--color-primary);
+  border: var(--border-base);
   box-shadow: var(--shadow-base);
 }
 .c-price__button {
@@ -81,12 +81,12 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 8px;
+  padding: var(--padding-md);
   padding-right: 10px;
   fill: currentColor;
   cursor: pointer;
   color: var(--color-primary);
-  border-right: 2px solid var(--color-primary);
+  border-right: var(--border-base);
   transition: var(--transition-slow);
 }
 .c-price__button:hover,
@@ -95,8 +95,8 @@
   color: var(--color-white);
 }
 .c-price__icon {
-  width: 24px;
-  height: 24px;
+  width: var(--width-md);
+  height: var(--height-md);
 }
 .c-price__values {
   min-width: 128px;
@@ -107,42 +107,42 @@
   color: var(--color-primary);
 }
 .c-price__old {
-  font-size: 1rem;
+  font-size: var(--font-size-md);
   margin-right: 8px;
   text-decoration-line: line-through;
 }
 .c-price__current {
-  font-size: 1.5rem;
+  font-size: var(--font-size-lg);
   font-weight: 500;
 }
 
 .c-heading {
-  width: 100%;
-  margin-top: 16px;
+  width: var(--width-max);
+  margin-top: var(--margin-lg);
 }
 .c-heading__quantity {
   min-height: 19px;
-  font-size: 1rem;
+  font-size: var(--font-size-md);
   font-weight: 500;
   color: var(--color-warning);
 }
 .c-heading__title {
   margin-top: 4px;
-  font-size: 1.5rem;
+  font-size: var(--font-size-lg);
   font-weight: 500;
   color: var(--color-primary);
 }
 .c-heading__description {
-  width: 100%;
-  margin-top: 16px;
-  font-size: 1rem;
+  width: var(--width-max);
+  margin-top: var(--margin-lg);
+  font-size: var(--font-size-md);
   font-weight: 300;
   line-height: 120%;
   color: var(--color-secondary);
 }
 
 .c-actions {
-  width: 100%;
+  width: var(--width-max);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -152,8 +152,8 @@
   gap: 8px;
 }
 .c-actions__btn {
-  width: 24px;
-  height: 24px;
+  width: var(--width-md);
+  height: var(--height-md);
   fill: currentColor;
   cursor: pointer;
   color: var(--color-secondary);
