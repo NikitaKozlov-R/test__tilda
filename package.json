@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/NikitaKozlov-R/test__tilda/issues"
   },
-  "homepage": "https://github.com/NikitaKozlov-R/test__tilda#readme"
+  "homepage": "https://github.com/NikitaKozlov-R/test__tilda#readme",
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  }
 }
