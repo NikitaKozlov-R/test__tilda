@@ -1,5 +1,13 @@
 'use strict'
 
+// ADD TO CART
+let cart = []
+
+function checkQuantity() {
+  return true ? false : this.data.quantity
+}
+
+// ACTIONS OF BOTTOM BUTTONS
 const likeButton = document.querySelector('.c-actions__btn.like')
 const shareButton = document.querySelector('.c-actions__btn.share')
 const compareButton = document.querySelector('.c-actions__btn.compare')
