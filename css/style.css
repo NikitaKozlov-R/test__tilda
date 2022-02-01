@@ -60,48 +60,52 @@
   z-index: 2;
   width: min-content;
   padding-right: 16px;
-  margin-top: -12px;
+  margin-top: -18px;
+  border-radius: 24px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   background-color: var(--color-white);
-  border: 1px solid var(--color-primary);
+  border: 2px solid var(--color-primary);
   box-shadow: var(--shadow-base);
-  border-radius: 24px;
+  transition: var(--transition-base);
+}
+.c-price:hover {
+  box-shadow: var(--shadow-hover);
 }
 .c-price__button {
-  width: 40px;
-  height: 24px;
+  width: 56px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 4px;
-  padding-right: 7px;
+  padding: 8px;
+  padding-right: 10px;
   fill: currentColor;
   cursor: pointer;
   color: var(--color-primary);
-  border-right: 1px solid var(--color-primary);
+  border-right: 2px solid var(--color-primary);
 }
 .c-price__icon {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
 }
 
 .c-price__values {
-  min-width: 64px;
-  padding-left: 8px;
+  min-width: 128px;
+  padding-left: 16px;
   display: flex;
   flex-direction: row;
   align-items: center;
   color: var(--color-primary);
 }
 .c-price__old {
-  font-size: 0.5rem;
-  margin-right: 4px;
+  font-size: 1rem;
+  margin-right: 8px;
   text-decoration-line: line-through;
 }
 .c-price__current {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
