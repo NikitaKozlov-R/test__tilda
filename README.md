@@ -30,3 +30,15 @@
 ```
 Просто нажмите на index.html 2 раза или откройте VS Code и воспользуйтесь плагином Live Server
 ```
+
+### Установка Prettier
+
+```
+npm i
+```
+
+or
+
+```
+npm install
+```
