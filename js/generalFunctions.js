@@ -1,4 +1,4 @@
-function dataInner(container, value) {
+function setInnerHtml(container, value) {
   if (!value) {
     return
   }
@@ -14,8 +14,8 @@ function showAlert(title, massage) {
     return
   }
 
-  dataInner(titleContainer, title)
-  dataInner(massageContainer, massage)
+  setInnerHtml(titleContainer, title)
+  setInnerHtml(massageContainer, massage)
 
   alertContainer.classList.add('active')
 

@@ -11,9 +11,9 @@ function renderHeading(quantity, title, description) {
 
   quantity = quantityHandler(quantity)
 
-  dataInner(quantityContainer, quantity)
-  dataInner(titleContainer, title)
-  dataInner(descriptionContainer, description)
+  setInnerHtml(quantityContainer, quantity)
+  setInnerHtml(titleContainer, title)
+  setInnerHtml(descriptionContainer, description)
 }
 
 function renderPrice(priceOld, priceCurrent) {
@@ -22,8 +22,8 @@ function renderPrice(priceOld, priceCurrent) {
 
   priceCurrent = priceCurrent + '₽'
 
-  dataInner(priceOldContainer, priceOld)
-  dataInner(priceCurrentContainer, priceCurrent)
+  setInnerHtml(priceOldContainer, priceOld)
+  setInnerHtml(priceCurrentContainer, priceCurrent)
 }
 
 function renderImages(images, title) {
