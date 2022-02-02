@@ -56,10 +56,3 @@ function quantityHandler(quantity) {
 
   return false
 }
-
-function dataInner(container, value) {
-  if (!value) {
-    return
-  }
-  container.innerHTML = value
-}
