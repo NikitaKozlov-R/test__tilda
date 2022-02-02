@@ -20,7 +20,7 @@ function renderPrice(priceOld, priceCurrent) {
   const priceOldContainer = document.querySelector('.c-price__old')
   const priceCurrentContainer = document.querySelector('.c-price__current')
 
-  priceCurrent + '₽'
+  priceCurrent = priceCurrent + '₽'
 
   dataInner(priceOldContainer, priceOld)
   dataInner(priceCurrentContainer, priceCurrent)
