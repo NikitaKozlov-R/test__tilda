@@ -13,8 +13,11 @@ function cartHandler(title, price, quantity) {
     const position = makeCartPosition(title, price)
     cart.push(position)
     console.log('User cart: ', cart)
-    alert('Product added to cart! Check console')
     cartButton.setAttribute('disabled', 'disabled')
+    showAlert(
+      'Product added!',
+      'In the console you can see the array of positions in the cart'
+    )
   })
 }
 
@@ -23,6 +26,21 @@ function makeCartPosition(title, price) {
     title: title,
     price: price,
   }
+}
+
+function showAlert(title, massage) {
+  const alertContainer = document.querySelector('.alert')
+  const titleContainer = document.querySelector('.alert__title')
+  const massageContainer = document.querySelector('.alert__massage')
+
+  dataInner(titleContainer, title)
+  dataInner(massageContainer, massage)
+
+  alertContainer.classList.add('active')
+
+  setTimeout(() => {
+    alertContainer.classList.remove('active')
+  }, 8000)
 }
 
 const likeButton = document.querySelector('.c-actions__btn.like')
