@@ -7,12 +7,11 @@ function cartHandler(title, price, quantity) {
 
   if (quantity === 0) {
     cartButton.setAttribute('disabled', 'disabled')
+    return
   }
 
   cartButton.addEventListener('click', () => {
-    if (quantity === 0) {
-      return
-    }
+    if (quantity === 0) return
 
     const position = makeCartPosition(title, price)
     cart.push(position)

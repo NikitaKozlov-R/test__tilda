@@ -1,7 +1,5 @@
 function setInnerHtml(container, value) {
-  if (!value) {
-    return
-  }
+  if (!value) return
   container.innerHTML = value
 }
 
@@ -10,9 +8,7 @@ function showAlert(title, massage) {
   const titleContainer = document.querySelector('.alert__title')
   const massageContainer = document.querySelector('.alert__massage')
 
-  if (alertContainer.classList.contains('active')) {
-    return
-  }
+  if (alertContainer.classList.contains('active')) return
 
   setInnerHtml(titleContainer, title)
   setInnerHtml(massageContainer, massage)
