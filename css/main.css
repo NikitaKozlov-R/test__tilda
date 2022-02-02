@@ -10,6 +10,7 @@
   --height-container: 552px;
   --height-max-view: 100vh;
 
+  --padding-sm: 4px;
   --padding-md: 8px;
   --padding-lg: 16px;
   --padding-container: 24px 32px;
@@ -22,11 +23,15 @@
   --font-size-md: 1rem;
   --font-size-lg: 1.5rem;
 
+  --font-weight-sm: 300;
+  --font-weight-md: 400;
+  --font-weight-lg: 500;
+
   --color-primary: #05080d;
   --color-secondary: #66666e;
   --color-white: #fdfffc;
   --color-strong-red: #f21b3f;
-  --color-background: #161b22;
+  --color-background: #f4f4f6;
   --color-navy-blue: #2d7dd2;
   --color-orange-yellow: #eeb902;
 
@@ -34,13 +39,15 @@
   --border-radius-md: 8px;
   --border-radius-lg: 24px;
 
-  --border-base: 2px solid var(--color-primary);
+  --border-base: 1px solid var(--color-primary);
 
   --transition-base: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   --transition-slow: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
   --scale-base: scale(1.2);
 
   --shadow-base: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --shadow-base-blur: 0 3px 6px rgba(0, 0, 0, 0.16),
+    0 3px 6px rgba(0, 0, 0, 0.23);
   --shadow-hover: 0 14px 28px rgba(0, 0, 0, 0.25),
     0 10px 10px rgba(0, 0, 0, 0.22);
   --shadow-focus: 0px 0px 0px 1px rgba(0, 0, 0, 0.6);
