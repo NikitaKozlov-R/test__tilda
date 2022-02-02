@@ -94,6 +94,13 @@
   box-shadow: inset 6.5em 0 0 0 var(--color-primary);
   color: var(--color-white);
 }
+.c-price__button:disabled {
+  color: var(--color-secondary);
+}
+.c-price__button:disabled:hover {
+  cursor: unset;
+  box-shadow: unset;
+}
 .c-price__icon {
   width: var(--width-md);
   height: var(--height-md);
