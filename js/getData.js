@@ -11,6 +11,7 @@ fetch(url)
 
     response.json().then(function (data) {
       renderData(data)
+      cartHandler(data.title, data.price, data.quantity)
     })
   })
   .catch(function (error) {
