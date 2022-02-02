@@ -139,6 +139,9 @@
 .c-price__button:disabled {
   color: var(--color-secondary);
 }
+.c-price__button.success:disabled {
+  color: var(--color-success);
+}
 .c-price__button:disabled:hover {
   cursor: unset;
   box-shadow: unset;
