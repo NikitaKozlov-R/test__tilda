@@ -1,15 +1,19 @@
 'use strict'
 
-let cart = []
-
 function cartHandler(title, price, quantity) {
   const cartButton = document.querySelector('.c-price__button')
+
+  let cart = []
 
   if (quantity === 0) {
     cartButton.setAttribute('disabled', 'disabled')
   }
 
   cartButton.addEventListener('click', () => {
+    if (quantity === 0) {
+      return
+    }
+
     const position = makeCartPosition(title, price)
     cart.push(position)
 
