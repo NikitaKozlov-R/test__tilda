@@ -10,14 +10,15 @@ function cartHandler(title, price, quantity) {
   }
 
   cartButton.addEventListener('click', () => {
-    const position = makeCartPoaition(title, price)
+    const position = makeCartPosition(title, price)
     cart.push(position)
     console.log('User cart: ', cart)
     alert('Product added to cart! Check console')
+    cartButton.setAttribute('disabled', 'disabled')
   })
 }
 
-function makeCartPoaition(title, price) {
+function makeCartPosition(title, price) {
   return {
     title: title,
     price: price,
