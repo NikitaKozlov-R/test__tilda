@@ -12,9 +12,11 @@ function cartHandler(title, price, quantity) {
   cartButton.addEventListener('click', () => {
     const position = makeCartPosition(title, price)
     cart.push(position)
-    console.log('User cart: ', cart)
+
     cartButton.setAttribute('disabled', 'disabled')
     cartButton.classList.add('success')
+
+    console.log('User cart: ', cart)
     showAlert(
       'Product added!',
       'In the console you can see the array of positions in the cart'
@@ -29,23 +31,25 @@ function makeCartPosition(title, price) {
   }
 }
 
-const likeButton = document.querySelector('.c-actions__btn.like')
-const shareButton = document.querySelector('.c-actions__btn.share')
-const compareButton = document.querySelector('.c-actions__btn.compare')
-const infoButton = document.querySelector('.c-actions__btn.info')
+;(function () {
+  const likeButton = document.querySelector('.c-actions__btn.like')
+  const shareButton = document.querySelector('.c-actions__btn.share')
+  const compareButton = document.querySelector('.c-actions__btn.compare')
+  const infoButton = document.querySelector('.c-actions__btn.info')
 
-likeButton.addEventListener('click', () => {
-  likeButton.classList.toggle('active')
-})
+  likeButton.addEventListener('click', () => {
+    likeButton.classList.toggle('active')
+  })
 
-shareButton.addEventListener('click', () => {
-  shareButton.classList.toggle('active')
-})
+  shareButton.addEventListener('click', () => {
+    shareButton.classList.toggle('active')
+  })
 
-compareButton.addEventListener('click', () => {
-  compareButton.classList.toggle('active')
-})
+  compareButton.addEventListener('click', () => {
+    compareButton.classList.toggle('active')
+  })
 
-infoButton.addEventListener('click', () => {
-  showAlert('Hello!', 'Here is awesome product information')
-})
+  infoButton.addEventListener('click', () => {
+    showAlert('Hello!', 'Here is awesome product information')
+  })
+})()
