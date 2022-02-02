@@ -6,6 +6,47 @@
   align-items: center;
   background-color: var(--color-background);
 }
+
+.alert {
+  position: absolute;
+  top: var(--margin-lg);
+  z-index: 10;
+  max-width: var(--width-container);
+  display: flex;
+  border: var(--border-base);
+  border-radius: var(--border-radius-lg);
+  padding: var(--padding-md) var(--padding-lg);
+  background-color: var(--color-white);
+  box-shadow: var(--shadow-hover);
+  transition: var(--transition-base);
+  opacity: 0;
+}
+.alert.active {
+  opacity: 1;
+}
+.alert__icon {
+  width: var(--width-md);
+  height: var(--height-md);
+  min-width: var(--width-md);
+  margin-right: var(--margin-md);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary);
+  fill: currentColor;
+}
+.alert__massage {
+  font-size: var(--font-size-md);
+  color: var(--color-primary);
+}
+.alert__title {
+  font-weight: var(--font-weight-lg);
+}
+.alert__text {
+  margin-top: var(--margin-sm);
+  font-weight: var(--font-weight-sm);
+}
+
 .card {
   width: var(--width-container);
   height: var(--height-container);
@@ -16,6 +57,7 @@
   border-radius: var(--border-radius-sm);
   padding: var(--padding-container);
   background-color: var(--color-white);
+  box-shadow: var(--shadow-base-blur);
 }
 .c-inner {
   display: flex;
